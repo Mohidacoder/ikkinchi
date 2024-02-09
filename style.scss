@@ -1,0 +1,142 @@
+
+$textcolor:white;
+$bluecolor :rgba(0,152,255);
+
+
+.navbar{
+    position: fixed !important;
+    width: 100%;
+    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.512)!important ;
+    .container-fluid{
+        .navbar-brand{
+            margin-left: 5%;
+        }
+        #mynavbar{
+            margin-left: 35%;
+            gap: 30px;
+            .nav-link{
+                color: $textcolor;
+                font-weight: bold;
+            }
+        }
+       
+    }
+}
+
+#home{
+    height: 100vh;
+     background-image: url("../img/trees-bg.png") !important;
+     background-size:cover;
+    .wrapper{
+        height: 88vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &-title{
+            width: 500px;
+            text-align: center;
+            color: $textcolor;
+            position: relative;
+            padding: 10px;
+            &::before{
+                position: absolute;
+                content:"" ;
+                width: 75px;
+                height: 3px;
+                background-color: rgba(0,152,255);
+                top: 100%;
+                left: 45%;
+
+            }
+        }
+        &-text{
+            padding-top: 20px;
+            width: 800px;
+            text-align: center;
+            color: $textcolor;
+        }
+        &-btn{
+            padding: 10px 20px;
+            background-color: transparent !important;
+            border: 2px solid $bluecolor;
+            border-radius: 10px;
+            color: $bluecolor;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.4s linear;
+            &:hover{
+                background-color: $bluecolor !important;
+                border: 2px solid $textcolor;
+                color: $textcolor;
+            }
+        }
+       
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        .box{
+            width: 25px;
+            height: 25px;
+            border: 3px solid white;
+            border-radius: 50%;
+            
+        }
+        .box-1{
+            background-color: $bluecolor;
+            border: 3px solid $bluecolor;
+            
+        }
+    }
+}
+#story{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .row-1{
+        height: 35vh;
+        align-items: center;
+        .col-md-6{
+            img{
+                padding-left: 35%;
+            }
+        }
+        .wrapper{
+            &-btn{
+                padding: 10px 20px;
+                background-color: transparent !important;
+                border: 2px solid $bluecolor;
+                border-radius: 10px;
+                color: $bluecolor;
+                font-weight: bold;
+                font-size: 17px;
+                transition: 0.4s linear;
+                
+            }
+        }
+        
+    }
+
+    .row-2{
+        height: 65vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url('../img/story-bg.png');
+        background-repeat: no-repeat;
+        background-size:cover ;
+        h2{
+            color: $textcolor;
+        }
+    }
+
+}
